@@ -1,0 +1,16 @@
+<div class ="container-fluid text-center">
+<h1>RANDOM QUOTE MACHINE</h1>
+<h2>A selection of random quotes!</h2>
+
+<a href="https://ibb.co/cxN1Bw"><img src="https://preview.ibb.co/hMRTrw/IMG_0005.jpg" alt="IMG_0005" border="0"></a>
+ <br/>
+  <button class="btn btn-default" type ="submit" id="newQuote">New Quote</button>
+  <a href="#" class="btn btn-default" id="tweet">Tweet Quote</a>
+  
+  <div class ="quotes text-center"> 
+    <span class ="quote"></span>
+    <br/>
+    <span class ="author"></span>
+  </div>
+  
+</div>
