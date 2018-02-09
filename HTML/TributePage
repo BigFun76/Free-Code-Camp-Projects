@@ -1,0 +1,46 @@
+<style>
+  .larger-image {
+    width: 1075px;
+  }
+  body {
+  margin-top: 40px;
+}
+</style>
+
+<div class="container">
+  <div class="jumbotron">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1 class="text-center">Steve Jobs</h1>
+        <h2 class="text-center"><em>One of the Crazy Ones</em></h2>
+    
+       <div class="thumbnail"><image  src="https://motherboard-images.vice.com/content-images/contentimage/25251/1441211888935627.jpg" alt="A Young Steve Jobs" class="larger-image">
+         <div class="caption text-center">A young Steve Jobs, in his office.
+       </div>
+         </div>
+     
+    
+ <h3 class="text-center"> Here is a timeline of Steve Jobs' early career:</h3>
+      
+  <ul> 
+  <li><strong>1955</strong> - born in San Francisco, CA</li>    <li><strong>1968</strong> - given a summer job by Bill Hewlett (of Hewlett Packard) after Jobs cold-called him to ask for parts for an electronics project</li>
+    <li><strong>1973</strong>  - began working as a technician at Atari</li>
+    <li><strong>1974</strong> - traveled to India, in search of enlightenment</li>
+    <li><strong>1976</strong> - founded Apple with Steve Wozniak and Ronald Wayne</li>
+    <li><strong>1977</strong> - Apple began selling their first consumer product, the Apple II</li>
+      </ul>
+    
+          <blockquote>
+            <p>"Steve was difficult, but valuable"..."he was very often the smartest guy in the room, and he would let people know that."</p>
+            <footer><cite>- Nolan Bushnell, Co-founder of Atari</cite></footer>
+          </blockquote>
+          <h3>I hope you will take time to learn more about this incredible person by following this link. <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank">Wikipedia entry</a>.</h3>
+         </div>   
+       </div>
+     </div>
+    </div>
+     <footer class="text-center">
+    
+    <p>Written and coded by Michael Cornelius</p>
+  </footer>  
+</div> 
