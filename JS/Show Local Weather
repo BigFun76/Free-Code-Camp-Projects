@@ -1,0 +1,54 @@
+$(document).ready(function(){
+var long;
+  var lat;
+  var fTemp;
+  var cTemp;
+  var tempSwap = true;
+  var wIcon;
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      
+      lat = position.coords.latitude;
+      long = position.coords.longitude;
+      
+      
+      var api = 'https://openweathermap.org/data/2.5/weather?lat='+lat+'&lon='+long+'&appid=b6907d289e10d714a6e88b30761fae22';
+      
+
+$.getJSON(api, function(data){
+  var weatherType=data.weather[0].description;
+  var cTemp = data.main.temp;
+  var windSpeed = data.wind.speed;
+  var city = data.name;
+  var iconCode = data.weather[0].icon;
+  var iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png"; 
+ 
+  //Temp conversions
+  //1.8 x (C) + 32.
+  fTemp = ((cTemp)*(1.8) + 32).toFixed(0);
+  //cTemp = kTemp-273;
+  
+  //calls to html
+  $("#city").html(city);
+  $("#weatherType").html(weatherType);
+  $("#fTemp").html(fTemp + " &#8457"); 
+  $("#fTemp").click(function() {
+    
+    if (tempSwap === false) {
+      $("#fTemp").html(fTemp + " &#8457;");
+      tempSwap = true;
+    } else {
+      $("#fTemp").html(cTemp.toFixed(0) + " &#8451;");
+      tempSwap = false;
+    }
+    
+    
+  })
+  //$("#cTemp").html(cTemp);
+  $("#wIcon").html("<img src='" + iconUrl  + "'>");
+   
+ });  
+  
+});
+}
+ });
