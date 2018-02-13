@@ -1,0 +1,32 @@
+<head>
+  <title>Weather Report</title>
+  
+</head>
+<body>
+<div class ="container-fluid text-center">
+  <div style="text-align:center">
+<h1>WEATHER REPORT</h1>
+  <ul style="list-style:none">
+    <li class="btn btn-default" id="city"></li>
+    <li class="btn btn-default" id="fTemp"></li>
+    <li class="btn btn-default" id="weatherType"></li>
+    <li class="btn btn-default" id="wIcon"></li>
+  </ul>
+    
+    </div>
+  
+  
+    
+  
+<a href="https://ibb.co/gG8rvc"><img src="https://preview.ibb.co/cdMBvc/Needle_and_Sky.jpg" alt="Needle_and_Sky" border="0"></a>
+ <br>
+  <br/>
+  
+</div>
+  <!-- Footer -->
+<address>
+	Designed and develped by Michael C. Cornelius
+
+	&copy; copyright 2018 MCC
+	</address> 
+</body>
