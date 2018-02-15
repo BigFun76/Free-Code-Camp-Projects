@@ -15,4 +15,5 @@ CodePen:
     Random Quote Machine: https://codepen.io/BigFun/full/yvBXpy/
     Show the Local Weather: https://codepen.io/BigFun/full/xXoaOx/
     Wikipedia Search: https://codepen.io/BigFun/full/VQbVYw/
+    Twitch.TV JSON: https://codepen.io/BigFun/full/jZGZzN/
     
