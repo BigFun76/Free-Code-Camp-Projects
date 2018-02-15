@@ -1,0 +1,37 @@
+<head>
+  <title>Wikipedia Search</title>
+  
+</head>
+<body>
+  <div class="container">
+<div class="container">
+  <h1>WIKIPEDIA SEARCH</h1>
+  <h4>Search by Topic or Click <a href="https://en.wikipedia.org/wiki/Special:Random" class="btn btn-default" id="random"/>Random</h4></a><br/>
+  </div>
+  <div class="container">
+  <div class="row">
+    <div class="col-xs-4">
+  <img src="https://preview.ibb.co/jagUQn/121513_1.png" alt="121513_1" border="0"/><br/>
+  </div>
+  
+    <div class="col-xs-4 searchDiv">
+     <!--action="/action_page.php"-->
+      <input class="form-control" id="searchTerm"><br/>
+      <button id="search"class="btn btn-default" type="submit">Submit</button>
+    
+  </div>
+    <div class="col-xs-4">
+      <ul style="list-style-type: none" id="output">
+  
+  </ul>
+      
+    </div>
+</div>
+  </div>   
+   
+  
+  <address>
+    Designed and Developed by Michael C. Cornelius &copy; Copyright 2018 MCC
+  </address>
+</div>
+</body>
