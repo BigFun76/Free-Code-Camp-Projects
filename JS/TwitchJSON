@@ -1,0 +1,70 @@
+var channels = ["ESL_SC2", "joshOG","Shadder2K", "OgamingSC2", "cretetion", "freecodecamp", "storbeck", "habathcx", "RobotCaleb", "noobs2ninjas", "TobiasFate"];
+var users =[];
+var offlineChannels =[];
+var api = 'https://wind-bow.glitch.me/twitch-api/';  
+var type = '/streams/';
+var type2 = '/channels/';
+var call = '?callback=?';
+var url;
+var url2;
+
+function setup() {
+  //FCC status call
+  $.getJSON("https://wind-bow.glitch.me/twitch-api/streams/freecodecamp", fccStatus);
+  function fccStatus(fccData){
+  if (fccData.stream===null) {
+    $('#fccStatus').html("Free Code Camp is OFFLINE");
+  }else {
+    $('#fccStatus').html("Free Code Camp is Online");                        
+  };
+  }
+  
+  for (i=0;i<channels.length;i++){
+    url = api + type2 + channels[i] + call; 
+    $.getJSON(url, gotStatus);
+  
+  function gotStatus(data) {
+    var user = data.display_name;
+    var status = data.status;
+    var logo = data.logo;
+    var link = data.url;
+    users.push(user);
+    
+    url2 = api + type + user + call;
+    $.getJSON(url2, gotData) 
+    function gotData(data2) {
+      console.log(data2);
+      if (data2.stream===null) {
+        offlineChannels.push(data.display_name);
+        $('#offline').prepend("<li><a href= " +link+"><img src='"+logo+"'> "+user + "</a><p style='font-size:0.8em'>"+ "Status: OFFLINE"+"</p></li>");
+      //$("#offline").prepend(data.display_name+ ": is offline.  ");
+      }else{
+        $('#online').prepend("<li><a href= " +link+"><img src='"+logo+"'> "+user + "</a><p style='font-size:0.8em'>"+ status+"</p></li>");
+        //$("#online").prepend(data.display_name + " is ONLINE!!");
+      };
+    };
+    //$("#test").html(users);
+  };//close gotStatus
+  };//close for loop
+};//close setup
+$(document).ready(function() { 
+setup();
+  
+    // Menu Controls
+   
+$("#showOn").click(function(){
+    $("#offline").hide();
+	$("#notactive").hide();
+	$("#online").show();
+})
+$("#showOff").click(function(){
+    $("#online").hide();
+	$("#notactive").hide();
+	$("#offline").show();
+})
+$("#showAll").click(function(){
+    $("#online").show();
+	$("#offline").show();
+	$("#notactive").show();
+})
+});
