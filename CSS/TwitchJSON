@@ -1,0 +1,63 @@
+body {
+  text-align:center;
+}
+
+.streams {
+  text-align:left;
+  font-size:2em;
+  padding-left:5px;
+  margin-top:5px;
+  background-color: grey;
+  border-radius:5px; 
+}
+
+#online {
+  background-color: orange;
+}
+
+#showOn {
+  background-color:orange;
+  border-color:black;
+}
+#showAll {
+  border-color:black;
+}
+
+#offline {
+  background-color: #D24C4C;
+}
+#showOff {
+  background-color: #D24C4C;
+  border-color:black;
+}
+
+#notValid {
+   background-color: #00FFFF;
+}
+ul {
+   list-style-type: none;
+}
+
+li {
+  list-style-type: none;
+  border-bottom: 1px solid gray;
+  padding-top:5px;
+}
+
+img {
+  
+  border-radius:50%;
+  width:40px
+  
+}
+
+.showMe {
+  text-align:center;
+  width:100%;
+  margin-right:auto;
+  margin-left:auto; 
+}
+
+button {
+  margin-left:auto;
+}
