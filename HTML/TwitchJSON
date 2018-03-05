@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="row" id="header">
+    <h1>Twitch Streamers</h1>
+    <div id="menu">
+ 
+<!-- link to FreeCodeCamp channel -->
+<a href="https://www.twitch.tv/freecodecamp" target="_blank">
+
+  <br/><div class="pull-center text-center"><h4 id="fccStatus"></h4></div>
+  </a>
+</div><!-- close header -->
+<div id="showMe" class="row">	
+<button id="showAll" class="btn btn-primary" type="button">See All</button> 
+<button id="showOn" class="btn btn-success" type="button">Online Only</button>
+<button id="showOff" class="btn btn-info" type="button">Offline Only</button>  
+</div><!-- showMe -->
+</div> <!-- twitch -->
+<div class="menu">
+      <div class="selector active">
+        <div class="streams" id="online"></div>
+        <ul>
+          
+        </ul>
+      </div>
+      <div class="streams" id="offline">
+        <div class="streams"></div>
+        <ul>
+          
+        </ul>
+      </div>
+      <div class="streams" id="invalid">
+        <div class="streams"></div>
+        <ul>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="display">
+  </div>
+  <div class="row" id="footer">
+  </div>
+</div>
