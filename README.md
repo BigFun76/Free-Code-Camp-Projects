@@ -17,3 +17,6 @@ CodePen:
     Wikipedia Search: https://codepen.io/BigFun/full/VQbVYw/
     Twitch.TV JSON: https://codepen.io/BigFun/full/jZGZzN/
     
+  Advanced Projects:
+  
+  
