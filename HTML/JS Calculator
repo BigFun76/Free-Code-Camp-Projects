@@ -1,0 +1,60 @@
+<head>
+  <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Montserrat">
+</head>  
+
+<div class="container">
+  <div class="container calculator">
+    <div class="title">
+      <h3>Big Fun's Calculator</h3>
+      </div>
+   <div class="container display">
+    <h1 class="result" id="disResult">0<h1> 
+     </div> 
+      <div class ="container buttons-1">
+<button class="btn-lg btn-clear" type="button" id="clearAll">AC</button>
+<button class="btn-lg btn-clear" type="button" id="clear">CE</button>
+<button class="btn-lg btn-normal" type="button" id="divide"> / </button>
+<button class="btn-lg btn-normal" type="button" id="multiply"> X </button>
+    </div>
+   
+  <div class ="container buttons-1">
+<button class="btn-lg btn-normal" type="button" id="7">7</button>
+<button class="btn-lg btn-normal" type="button" id="8">8</button>
+<button class="btn-lg btn-normal" type="button" id="9">9</button>
+<button class="btn-lg btn-normal" type="button" id="minus">-</button>
+    </div>  
+      
+  <div class ="container buttons-1">
+<button class="btn-lg btn-normal" type="button" id="4">4</button>
+<button class="btn-lg btn-normal" type="button" id="5">5</button>
+<button class="btn-lg btn-normal" type="button" id="6">6</button>
+<button class="btn-lg btn-normal" type="button" id="plus">+</button>
+    </div>  
+      
+      <div class ="container buttons-2">
+        <div class="row">
+          <div class="col-xs-8">
+<button class="btn-lg btn-normal" type="button" id="1">1</button>
+<button class="btn-lg btn-normal" type="button" id="2">2</button>
+<button class="btn-lg btn-normal" type="button" id="3">3</button> 
+        </div>
+   <div class="col-xs-4 tall">     
+<button class="btn-lg btn-tall btn-normal" type="button" id="equals">=</button>
+          </div>
+        </div>
+      
+      <div class ="container buttons-3">
+        <div class="row">
+          <div class="col-xs-6 thin">
+<button class="btn-lg btn-wide btn-normal" type="button" id="0">0</button>
+            
+<button class="btn-lg btn-normal" type="button" id="decimal">.</button> 
+        </div>
+  </div>
+        </div>
+      </div>
+  <div class="footer">
+    <h5>Designed and Developed by Michael C. Cornelius <br>&copy; Copyright 2018 MCC<h5>
+  </div>
+</div>
