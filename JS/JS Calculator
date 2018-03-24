@@ -1,0 +1,134 @@
+$(document).ready(function(){
+var num1 = 0;
+var num2 = 0;
+var disTotal = "";
+var operator = "";  
+var total = 0;  
+  
+  //mapping the number buttons
+  $("#0").click(function(){
+    disTotal = disTotal + "0";
+    $("#disResult").html(disTotal);
+  });
+  $("#1").click(function(){
+    disTotal = disTotal + "1";
+    $("#disResult").html(disTotal);
+  });
+  
+  $("#2").click(function(){
+    disTotal = disTotal + "2";
+    $("#disResult").html(disTotal);
+  });
+  $("#3").click(function(){
+    disTotal = disTotal + "3";
+    $("#disResult").html(disTotal);
+  });
+  $("#4").click(function(){
+    disTotal = disTotal + "4";
+    $("#disResult").html(disTotal);
+  });
+  $("#5").click(function(){
+    disTotal = disTotal + "5";
+    $("#disResult").html(disTotal);
+  });
+  $("#6").click(function(){
+    disTotal = disTotal + "6";
+    $("#disResult").html(disTotal);
+  });
+  $("#7").click(function(){
+    disTotal = disTotal + "7";
+    $("#disResult").html(disTotal);
+  });
+  $("#8").click(function(){
+    disTotal = disTotal + "8";
+    $("#disResult").html(disTotal);
+  });
+  $("#9").click(function(){
+    disTotal = disTotal + "9";
+    $("#disResult").html(disTotal);
+  });
+  
+  //mapping the operator buttons
+  $("#plus").click(function(){
+    operator = "+";
+    total = disTotal;
+    num1 = total;
+    disTotal = "";
+    $("#disResult").html(disTotal);
+  });
+  $("#minus").click(function(){
+    operator = "-";
+    total = disTotal;
+    num1 = total;
+    disTotal = "";
+    $("#disResult").html(disTotal);
+  });
+  
+  $("#multiply").click(function(){
+    operator = "*";
+    total = disTotal;
+    num1 = total;
+    disTotal = "";
+    $("#disResult").html(disTotal);
+  });
+  
+  $("#divide").click(function(){
+    operator = "/";
+    total = disTotal;
+    num1 = total;
+    disTotal = "";
+    $("#disResult").html(disTotal);
+  });
+  
+  $("#decimal").click(function(){
+    
+    if (operator !== ".") {
+    operator = ".";
+    disTotal = disTotal + ".";
+    $("#disResult").html(disTotal);
+    }
+  });
+  
+  
+  //mapping the equals button
+  $("#equals").click(function(){
+    num2 = disTotal;
+    if (operator === "+"){
+    total = +num1 + +num2;
+    }else if (operator === "-"){
+    total = num1 - num2;
+    } else if (operator === "*"){
+    total = num1 * num2;
+    } else if (operator === "/") {
+      total = num1 / num2;
+      if (num1 % num2 == 0){
+        total = total;
+      }else {
+        total = total.toFixed(2);
+      }
+    }
+    disTotal = total;
+    operator = "";
+    $("#disResult").html(total);
+  });
+  
+  
+  //mapping the clear buttons
+  $("#clear").click(function(){
+    
+    if (total > 0){
+      disTotal = "";
+ $("#disResult").html(total);
+    }else {
+      $("#disResult").html("0");
+    }
+  });
+  $("#clearAll").click(function(){
+    $("#disResult").html("0");
+num1 = 0;
+num2 = 0;
+disTotal = "";
+operator = "";  
+total = 0; 
+  });
+});
