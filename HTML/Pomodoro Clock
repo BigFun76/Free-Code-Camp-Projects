@@ -1,0 +1,25 @@
+<head>
+  <link rel="stylesheet"
+ href="https://fonts.googleapis.com/css?family=Montserrat">
+  <meta charset="UTF-8">  
+</head> 
+
+<div class="container title">
+  <h1>Pomodoro Clock</h1>
+</div>
+
+<div class="timers row">
+  <div class="col-xs-4">
+    <h3> Work:</h3><p><span id="workMinus"><button class="modifier"> - </button></span><span id="worktimer">______</span><span id="workPlus"><button class="modifier"> + </button></span></p>
+  </div>
+  <div class="col-xs-4"><button class="btn-secondary" id="play">
+    Start</button><button class="btn-secondary" id="reset">
+    Reset</button>
+</div>
+      <div class="col-xs-4">
+        <h3> Break:</h3><p><span id="breakMinus"><button class="modifier"> - </button></span><span id="breaktimer">______</span><span id="breakPlus"><button class="modifier"> + </div></span></p>
+        <div>
+      </div>
+
+
+</div>
