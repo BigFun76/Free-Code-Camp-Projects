@@ -1,0 +1,59 @@
+body {
+  font-family: "Montserrat", serif;
+  background-color: grey;
+}
+
+.title h1{
+  color:lightgrey;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: 5px 5px 10px black;
+}
+
+.timers {
+  text-align:center;
+  margin-top: 50px;
+}
+
+#workMinus, #breakMinus {
+  font-size:5em;
+  color: red;  
+}
+
+#workPlus, #breakPlus {
+  font-size:5em;
+  color:green;
+}
+
+#breaktimer, #worktimer {
+  color:lightgrey;
+  font-size:4em;
+  text-shadow: 5px 5px 10px black;
+}
+
+h3 {
+  color:lightgrey;
+  font-size: 3em;
+  text-shadow: 5px 5px 10px black;
+}
+
+.btn-secondary {
+  margin-top: 70px;
+  margin-left:20px;
+  margin-right:20px;
+  color:silver;
+  background-color:black;
+  font-size: 2em;
+  border-radius: 5px;
+   outline: none;
+  box-shadow: 5px 5px 10px black;
+}
+
+.modifier {
+  background-color:grey;
+  border:none;
+  border-color:none;
+  margin-right: 5px;
+  margin-left: 5px;
+  outline: none; 
+}
