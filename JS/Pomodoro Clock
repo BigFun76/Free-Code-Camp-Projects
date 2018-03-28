@@ -1,0 +1,92 @@
+$(document).ready(function(){
+var counter = 0; 
+var interval;  
+var workTime = 25;
+var breakTime = 5; 
+var workTimeLeft = (workTime*60);
+var breakTimeLeft = (breakTime*60);  
+var workMultiplier = (workTime/ workTime) * (workTime/100);
+var breakMultiplier = (breakTime / breakTime);
+  
+var workTimer = $('#worktimer');
+workTimer.html(workTime);
+
+var breakTimer = $('#breaktimer');
+breakTimer.html(breakTime);  
+
+$("#workMinus").click (function() {
+workTime = workTime -1;
+  workTimer.html(workTime);
+  });  
+$("#workPlus").click (function() {
+workTime = workTime +1;
+  workTimer.html(workTime);
+  });  
+  
+$("#breakMinus").click (function() {
+breakTime = breakTime -1;
+  breakTimer.html(breakTime);
+  });  
+$("#breakPlus").click (function() {
+breakTime = breakTime +1;
+  breakTimer.html(breakTime);
+  });  
+  
+var wav = 'http://freesound.org/data/previews/234/234564_4019029-lq.mp3';
+   var audio = new Audio(wav);
+  function pad2(number) {
+   return (number < 10 ? '0' : '') + number
+}
+function convertSeconds(s) {
+  var min = Math.floor(s / 60);
+  var sec = s % 60;
+  return pad2(min) + ':' + pad2(sec);
+}  
+    
+var workTimer = $('#worktimer');
+workTimer.html(workTime);
+
+var breakTimer = $('#breaktimer');
+breakTimer.html(breakTime);
+   
+function workIt() {
+  counter++;
+  workTimer.html(convertSeconds(workTimeLeft - counter));
+  if (counter == workTimeLeft) {
+    audio.play();
+    counter = 0;
+    clearInterval(interval);
+    workTime = 25;
+  workTimer.html(workTime);
+    interval = setInterval(breakIt, 1000);
+    
+  }
+}
+  
+function breakIt() {
+  counter++;
+  breakTimer.html(convertSeconds(breakTimeLeft - counter));
+  if (counter == breakTimeLeft) {
+    audio.play();
+    counter=0;
+    clearInterval(interval);
+    breakTime = 5;
+  breakTimer.html(breakTime);
+    
+  }
+}
+  
+   $("#play").click (function() {
+workTimeLeft = (workTime*60);
+breakTimeLeft = (breakTime*60);     
+interval = setInterval(workIt, 1000);      
+  });
+  
+$("#reset").click (function() {
+   clearInterval(interval);
+  workTime = 25;
+  workTimer.html(workTime);
+  breakTime = 5;
+  breakTimer.html(breakTime);
+  });
+});
